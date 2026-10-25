@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exif-doctor"
+version = "1.0.0"
+description = "Strip EXIF, GPS and other metadata from JPEG, PNG and WebP files, with a rescan proof"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+[project.scripts]
+exif-doctor = "exif_doctor:main"
+
+[tool.setuptools]
+py-modules = ["exif_doctor"]
